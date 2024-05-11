@@ -1,0 +1,14 @@
+<aside class="position-fixed start-0 bottom-0 top-0 h-100 bg-dark">
+  <nav class="nav flex-column flex-nowrap text-info h-100">
+    <h2 class="px-3 py-2 d-md-flex d-none">exclusive</h2>
+    <a
+      class="nav-link text-white pb-3 pt-2"
+      *ngFor="let item of panelMenuItems"
+      [routerLink]="item.href"
+      routerLinkActive="bg-info"
+    >
+      <i [class]="item.icon" class="h5 m-md-0 m-1"></i>
+      <span class="d-md-inline d-none m-2">{{ item.name }}</span>
+    </a>
+  </nav>
+</aside>
